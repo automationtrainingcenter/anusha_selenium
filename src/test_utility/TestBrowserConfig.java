@@ -1,4 +1,4 @@
-package basics;
+package test_utility;
 
 import actions.BrowserName;
 import utitlity.BrowserConfig;

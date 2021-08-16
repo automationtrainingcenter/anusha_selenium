@@ -6,7 +6,7 @@ import java.io.File;
 
 public class DriverConfig {
 
-    private static String getDriverFolderPath(String folderName){
+    public static String getFolderPath(String folderName){
         String baseDir = System.getProperty("user.dir");
         StringBuilder builder = new StringBuilder(baseDir);
         return builder.append(File.separator).append(folderName).append(File.separator).toString();
@@ -21,7 +21,7 @@ public class DriverConfig {
     }
 
     public static void setDriverPath(BrowserName browserName) {
-        String driversPath = getDriverFolderPath("drivers");
+        String driversPath = getFolderPath("drivers");
         switch(browserName){
             case CHROME:
                 System.setProperty("webdriver.chrome.driver", driversPath.concat(getDriverName("chromedriver")));

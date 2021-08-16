@@ -11,7 +11,7 @@ import java.util.List;
 public class WebTableDemo2 extends BrowserConfig {
 
     public static void main(String[] args) {
-        String companyCode = "TCS";
+        String companyCode = "TCSVinay sair ";
         boolean isCompNotListed = true;
         WebDriver driver = launchBrowser(BrowserName.CHROME, "https://www.bseindia.com/markets/Equity/equitysensexstream.html");
         sleep(2000);
